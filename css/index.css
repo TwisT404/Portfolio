@@ -7,7 +7,7 @@ header {
 }
 
 nav {
-    
+
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -26,7 +26,7 @@ li {
     color: white;
 }
 
-a {
+li>a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,7 @@ a {
     position: relative;
 }
 
-a::after {
+li>a::after {
     content: "";
     position: absolute;
     width: 0;
@@ -50,7 +50,7 @@ a::after {
     margin-top: 15px;
 }
 
-a:hover::after {
+li>a:hover::after {
     width: 100%;
 }
 
@@ -62,25 +62,39 @@ a:hover::after {
 
 /* Presentation section */
 .HomePage {
+    height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 30px;
+    gap: 15px;
 }
 
 .HomePage>h1 {
     font-size: xx-large;
-    
 }
+
 .HomePage>h1>span {
     text-decoration: underline;
-    font-size:75px;
+    font-size: 75px;
     font-style: italic;
-    font-weight:  bold;
+    font-weight: bold;
 }
+
 .HomePage>p {
     font-size: x-large;
     padding: 20px;
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 100px;
+        height: auto;
+    }
+
+    .HomePage>h1>span {
+        font-size: 50px;
+
+    }
 }
