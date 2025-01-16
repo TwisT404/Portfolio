@@ -1,0 +1,86 @@
+/* Header Menu Computer */
+header {
+    position: fixed;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+
+li {
+    color: white;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+    left: 0%;
+    bottom: 0;
+    border: 3px solid black;
+    border-radius: 15px;
+    position: relative;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    top: 75%;
+    height: 2px;
+    background: var(--color-white);
+    transition: 500ms ease;
+    margin-top: 15px;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+/* Size of the logo */
+.logo {
+    width: 125px;
+    height: auto;
+}
+
+/* Presentation section */
+.HomePage {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.HomePage>h1 {
+    font-size: xx-large;
+    
+}
+.HomePage>h1>span {
+    text-decoration: underline;
+    font-size:75px;
+    font-style: italic;
+    font-weight:  bold;
+}
+.HomePage>p {
+    font-size: x-large;
+    padding: 20px;
+}
