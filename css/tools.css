@@ -1,0 +1,50 @@
+.tools {
+    padding-top: 50px;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 2rem;
+}
+
+.tools img {
+    width: 75px;
+    height: auto;
+}
+.tools h2{
+    text-decoration: underline;
+}
+
+.tools__container{
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.back, .front, .design{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    border: 1px solid wheat;
+    margin: 20px;
+    padding: 15px;
+}
+
+
+.back__container, .front__container,.design__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.app, .language{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
