@@ -15,6 +15,10 @@ a{
 
 section{
     width: 100dvw;
-    height: 100vh;
     display: flex;
+}
+
+section h1{
+    font-size: xxx-large;
+    font-style: italic;
 }
