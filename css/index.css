@@ -10,12 +10,15 @@ header {
 }
 
 nav {
-
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 0 30px;
 }
+#menu_responsive{
+    display: none;
+}
+
 
 ul {
     list-style: none;
@@ -100,4 +103,26 @@ li>a:hover::after {
         font-size: 50px;
 
     }
+
+    nav{
+        width: unset;
+    }
+    #menu_computer{
+        display: none;
+    }
+
+    #menu_responsive{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;    
+    }
+    #menu_responsive>ul{
+        display: flex;
+        align-items: start;
+        justify-content:unset;
+        flex-wrap: wrap;
+        margin-right: 35px;
+    }
+
 }
