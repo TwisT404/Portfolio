@@ -39,6 +39,7 @@
     min-width: 200px;
     max-width: 450px;
     margin: 0 30px;
+    text-align: justify;
 }
 .container>div:last-child>a{
     background-color: azure;

@@ -39,6 +39,9 @@
     width: 100%;
     max-width: 500px;
 }
+.subject__text__detail>p{
+    text-align: justify;
+}
 .subject__text__detail>h2{
     text-decoration: underline;
 }
