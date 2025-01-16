@@ -5,6 +5,7 @@
     flex-direction: column;
     height: 100vh;
     margin-top: 2rem;
+    height: max-content;
 }
 
 .tools img {
