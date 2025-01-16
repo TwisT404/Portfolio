@@ -2,11 +2,14 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    background-color: black;
+    
     font-family: "Inter", serif;
     --background_color-black: black;
     --color-white: white;
     color: var(--color-white);
+}
+body{
+    background-color: var( --background_color-black);
 }
 
 a{

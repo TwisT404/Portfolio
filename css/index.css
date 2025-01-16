@@ -4,6 +4,7 @@ header {
     width: 100dvw;
     display: flex;
     justify-content: center;
+    background-color: black;
 }
 
 nav {

@@ -37,7 +37,7 @@
 }
 .container>div:last-child>p{
     min-width: 200px;
-    max-width: 400px;
+    max-width: 450px;
     margin: 0 30px;
 }
 .container>div:last-child>a{
@@ -48,5 +48,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;  
+    border-radius: 15px; 
+    gap: 15px; 
+}
+i{
+    color: black;
 }
