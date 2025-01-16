@@ -9,22 +9,22 @@
     <link rel="stylesheet" href="css/tools.css">
     <link rel="stylesheet" href="css/project.css">
     <link rel="stylesheet" href="css/contact.css">
-
+    <link rel="stylesheet" href="css/footer.css">
     <script src="https://kit.fontawesome.com/1ce9ab38cd.js" crossorigin="anonymous"></script>
 
     <title>Cédric Tanghe</title>
 </head>
 <body>
-    <header>
-        <nav class="menu">
+    <header id="menu">
+        <nav class="menu" >
             <div>
-                <a href=""><img src="./public/img/Logo.jpg" alt="logo" class="logo"></a>
+                <a href="#HomePage"><img src="./public/img/Logo.jpg" alt="logo" class="logo"></a>
             </div>
             <ul>
-                <li><a href="">Présentation</a></li>
-                <li><a href="">Outils</a></li>
-                <li><a href="">Projets</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#AboutMe">Présentation</a></li>
+                <li><a href="#tools">Outils</a></li>
+                <li><a href="#project">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -32,13 +32,13 @@
 
     <main>  
         <!-- HomePage -->
-        <section class="HomePage">
+        <section class="HomePage" id="HomePage">
                 <h1>Bonjour, je m'appelle </br></br><span>Cédric Tanghe</span></h1>
                 <p>Étudiant et futur développeur Back-End</p>
         </section>
 
         <!-- "About Me" Section  -->
-        <section class="AboutMe">
+        <section class="AboutMe" id="AboutMe">
             <h1>Présentation</h1>
             <div class="container">
                 <div>
@@ -58,7 +58,7 @@
             </div>
         </section>
         <!-- Tools section -->
-        <section class="tools">
+        <section class="tools" id="tools">
             <h1>Mes Outils</h1>
             <div class="tools__container">
                 <div class="back">
@@ -124,7 +124,7 @@
             </div>
         </section>
         <!-- Project Section -->
-        <section class="project">
+        <section class="project" id="project">
             <h1>Projet</h1>
             <div class="project__container">
                 <!-- Project -->
@@ -172,7 +172,7 @@
             </div>
         </section>
         <!-- Contact Section -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <h1>Contact</h1>
             <p>Si vous avez des questions, vous pouvez me contacter:</p>
             <div>
@@ -182,5 +182,22 @@
             </div>
         </section>
     </main>
+    <footer>
+        <a href="">Mentions légales</a>
+        <p>Site développé par Cédric Tanghe avec HTML, CSS, JS</p>
+    </footer>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("menu").style.top = "0";
+          } else {
+            document.getElementById("menu").style.top = "-10vh";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    
+    </script>
 </body>
 </html>

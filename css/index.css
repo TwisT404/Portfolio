@@ -1,10 +1,12 @@
 /* Header Menu Computer */
 header {
     position: fixed;
+    top: 0;
     width: 100dvw;
     display: flex;
     justify-content: center;
     background-color: black;
+    transition: ease-in-out 500ms;
 }
 
 nav {
@@ -57,7 +59,7 @@ li>a:hover::after {
 
 /* Size of the logo */
 .logo {
-    width: 125px;
+    width: 100px;
     height: auto;
 }
 
