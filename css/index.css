@@ -19,6 +19,10 @@ nav {
     display: none;
 }
 
+ul,li{
+    margin:0;
+    padding:0;
+}
 
 ul {
     list-style: none;
@@ -118,11 +122,13 @@ li>a:hover::after {
         align-items: center;    
     }
     #menu_responsive>ul{
+        width: 100%;
         display: flex;
-        align-items: start;
-        justify-content:unset;
+        align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
-        margin-right: 35px;
+        text-align: center;
+        gap: 10px;
     }
 
 }
